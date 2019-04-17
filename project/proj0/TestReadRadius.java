@@ -35,6 +35,9 @@ public class TestReadRadius {
          * a certain method static! */
         double actualOutput = NBody.readRadius(planetsTxtPath);
         checkEquals(actualOutput, 2.50E11, "readRadius()", 0.01);
+        checkEquals(NBody.readRadius("./data/3body.txt"), 1.25e11, "readRadius()", 0.01);
+        checkEquals(NBody.readRadius("./data/8star-rotation.txt"), 22e10, "readRadius()", 0.01);
+        checkEquals(NBody.readRadius("./data/uniform100.txt"), 5.0e9, "readRadius()", 0.01);
     }
 
     public static void main(String[] args) {
