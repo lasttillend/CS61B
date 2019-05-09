@@ -33,6 +33,7 @@ public class SLList {
         for (int n : inputArray) {
             p.next = new IntNode(n, null);
             p = p.next;
+            size += 1;
         }
     }
 
@@ -52,18 +53,28 @@ public class SLList {
         return size;
     }
 
-    /** Adds an item to the end of the list. */
-    private static void addLast(int x, IntNode p) {
-        if (p.next == null) {
-            p.next = new IntNode(x, null);
-        } else {
-            addLast(x, p.next);
-        }
-    }
+    // /** Adds an item to the end of the list. (recursive approach) */
+    // private void addLastRecur(int x, IntNode p) {
+    //     if (p.next == null) {
+    //         p.next = new IntNode(x, null);
+    //     } else {
+    //         addLast(x, p.next);
+    //     }
+    // }
+
+    // public void addLastRecur(int x) {
+    //     addLast(x, sentinel);
+    //     size += 1;
+    // }
 
     public void addLast(int x) {
-        addLast(x, sentinel);
-        size += 1;
+        int i = 0;
+        IntNode temp = sentinel;
+        while (i < size) {
+            temp = temp.next;
+            i += 1;
+        }
+        temp.next = new IntNode(x, null);
     }
 
     /** Deletes the first element in list. */
@@ -77,6 +88,6 @@ public class SLList {
     public static void main(String[] args){
         int[] s = new int[]{4, 5, 6};
         SLList L = new SLList(s);
-
+        L.addLast(10);
     }
 }
