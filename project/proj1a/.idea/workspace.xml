@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2d17137-5e66-43f6-9d4f-59198539d361" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/proj1a.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../disc/examprep02.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab/lab02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab/lab02/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture/demo/DLList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture/demo/IntList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lecture/demo/IntList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture/demo/IntList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lecture/demo/IntList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture/demo/SLList$IntNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lecture/demo/SLList$IntNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture/demo/SLList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lecture/demo/SLList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture/demo/SLList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lecture/demo/SLList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedListDequeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListDequeTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="e2d17137-5e66-43f6-9d4f-59198539d361" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LinkedListDequeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="85" column="24" lean-forward="true" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+            <state relative-caret-position="254">
+              <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
               <folding>
                 <element signature="e#1292#1300#0" expanded="true" />
                 <element signature="e#2214#2223#0" expanded="true" />
@@ -41,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LinkedListDeque.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            <state relative-caret-position="219">
+              <caret line="75" column="28" lean-forward="true" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
               <folding>
                 <element signature="e#1096#1097#0" expanded="true" />
                 <element signature="e#1122#1123#0" expanded="true" />
@@ -56,12 +45,31 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ArrayDeque.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="101" column="26" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+              <folding>
+                <element signature="e#452#453#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
+                <element signature="e#562#563#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Dream</find>
       <find>IntNode</find>
+      <find>T</find>
+      <find>list</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -72,18 +80,11 @@
       <list>
         <option value="$PROJECT_DIR$/LinkedListDequeTest.java" />
         <option value="$PROJECT_DIR$/LinkedListDeque.java" />
+        <option value="$PROJECT_DIR$/ArrayDeque.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/lib.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="640" />
     <option name="y" value="23" />
     <option name="width" value="640" />
@@ -94,24 +95,14 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="proj1a" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proj1a" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -125,7 +116,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LinkedListDeque">
+  <component name="RunManager" selected="Application.ArrayDeque">
+    <configuration name="ArrayDeque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArrayDeque" />
+      <module name="proj1a" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LinkedListDeque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LinkedListDeque" />
       <module name="proj1a" />
@@ -153,6 +151,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayDeque" />
         <item itemvalue="Application.LinkedListDeque" />
         <item itemvalue="Application.LinkedListDequeTest" />
       </list>
@@ -172,7 +171,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="640" y="23" width="640" height="777" extended-state="0" />
+    <frame x="640" y="23" width="640" height="777" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.51534736" />
@@ -185,7 +184,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329927" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.329927" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3737226" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.36058393" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -213,14 +212,26 @@
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ArrayDeque.java</url>
+          <line>218</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ArrayDeque.java</url>
+          <line>194</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LinkedListDequeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="85" column="24" lean-forward="true" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+        <state relative-caret-position="254">
+          <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
           <folding>
             <element signature="e#1292#1300#0" expanded="true" />
             <element signature="e#2214#2223#0" expanded="true" />
@@ -228,10 +239,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayDeque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="101" column="26" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+          <folding>
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LinkedListDeque.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        <state relative-caret-position="219">
+          <caret line="75" column="28" lean-forward="true" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
           <folding>
             <element signature="e#1096#1097#0" expanded="true" />
             <element signature="e#1122#1123#0" expanded="true" />
@@ -247,9 +273,76 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
