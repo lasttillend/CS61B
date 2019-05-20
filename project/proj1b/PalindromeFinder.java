@@ -2,16 +2,8 @@
 public class PalindromeFinder {
     public static void main(String[] args) {
         int minLength = 4;
-//        In in = new In("data/words.txt");
         Palindrome palindrome = new Palindrome();
-//        OffByN offByN = new OffByN(20);
 
-//        while (!in.isEmpty()) {
-//            String word = in.readString();
-//            if (word.length() >= minLength && palindrome.isPalindrome(word, offByN)) {
-//                System.out.println(word);
-//            }
-//        }
         for (int i = 0; i < 26; i++) {
             In in = new In("data/words.txt");
             System.out.printf("Total number of palindromes(off by %d): ", i);
