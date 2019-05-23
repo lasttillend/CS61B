@@ -133,7 +133,7 @@ public class ArrayDeque<Item> {
     }
 
     private void fixUsageRatio() {
-        double usageRatio = (double) size / items.length;
+        double usageRatio =  size / items.length;
         if (usageRatio < usageFactor && items.length > 16) {
             resize(items.length / 2);
         }
