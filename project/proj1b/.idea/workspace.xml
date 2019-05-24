@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ff56a5-745a-48a8-a7b7-1e29acc757bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../proj1gold/proj1gold.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../proj1a/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1a/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1gold/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1gold/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestPalindrome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="450">
+              <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,7 +151,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="640" />
     <option name="y" value="23" />
     <option name="width" value="640" />
@@ -303,7 +302,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="640" y="23" width="640" height="777" extended-state="0" />
+    <frame x="640" y="23" width="640" height="777" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.39095315" />
@@ -484,8 +483,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestPalindrome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        <state relative-caret-position="450">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
