@@ -137,8 +137,6 @@ public class ULLMap<K, V>  implements Map61B<K, V> {
     }
 
     @Override
-    public Set<K> keySet() {
-        throw new UnsupportedOperationException();
-    }
+    public Set<K> keySet() { throw new UnsupportedOperationException(); }
 
 }
