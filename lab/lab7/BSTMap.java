@@ -117,7 +117,7 @@ public class BSTMap<K extends Comparable<K>, V> implements Map61B<K, V> {
         return keys;
     }
 
-    /* Adds keys starting from node x to keySet. */
+    /* Adds keys rooted in node x to keySet. */
     private void inOrder(Node x, Set keySet) {
         if (x == null) {
             return;
@@ -127,7 +127,7 @@ public class BSTMap<K extends Comparable<K>, V> implements Map61B<K, V> {
         inOrder(x.right, keySet);
     }
 
-    /* Adds keys starting from node x to keyList. */
+    /* Adds keys rooted in node x to keyList. */
     private void inOrder(Node x, List keyList) {
         if (x == null) {
             return;
@@ -198,7 +198,7 @@ public class BSTMap<K extends Comparable<K>, V> implements Map61B<K, V> {
 
     }
 
-    /* Returns the smallest key starting from node x */
+    /* Returns the smallest key rooted in node x */
     private Node min(Node x) {
         if (x.left == null) {
             return x;
@@ -206,7 +206,7 @@ public class BSTMap<K extends Comparable<K>, V> implements Map61B<K, V> {
         return min(x.left);
     }
 
-    /* Removes the smallest key and associated value starting from node x. */
+    /* Removes the smallest key and associated value rooted in node x. */
     private Node removeMin(Node x) {
         if (x.left == null) {
             return x.right;
