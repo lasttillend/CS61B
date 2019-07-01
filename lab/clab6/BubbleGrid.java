@@ -25,7 +25,7 @@ public class BubbleGrid {
             A[dart[0]][dart[1]] = 0;
         }
 
-        UnionFind uf = new UnionFind(R * C + 1);
+        UnionFind uf = new UnionFind(R * C + 1);  // Uses a virtual node(index R*C) to represent connections to the top
 
         for (int r = 0; r < R; r++) {
             for (int c = 0; c < C; c++) {
