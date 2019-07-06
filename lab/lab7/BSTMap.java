@@ -198,7 +198,7 @@ public class BSTMap<K extends Comparable<K>, V> implements Map61B<K, V> {
 
     }
 
-    /* Returns the smallest key rooted in node x */
+    /* Returns the smallest key rooted at node x */
     private Node min(Node x) {
         if (x.left == null) {
             return x;
@@ -206,7 +206,7 @@ public class BSTMap<K extends Comparable<K>, V> implements Map61B<K, V> {
         return min(x.left);
     }
 
-    /* Removes the smallest key and associated value rooted in node x. */
+    /* Removes the smallest key and associated value rooted at node x. */
     private Node removeMin(Node x) {
         if (x.left == null) {
             return x.right;
