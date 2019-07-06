@@ -222,7 +222,7 @@ public class BSTMap<K extends Comparable<K>, V> implements Map61B<K, V> {
     @Override
     public V remove(K key, V value) {
         if (get(key) != value) {
-            return null;
+            throw new IllegalArgumentException("argument to remove is not currently mapped to the specified value");
         }
         return remove(key);
     }

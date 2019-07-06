@@ -1,6 +1,7 @@
 import java.util.Set;
-/* Your implementation BSTMap should implement this interface. To do so,
- * append "implements Map61B<K,V>" to the end of your "public class..."
+/**
+ * Your implementation MyHashMap should implement this interface. To do so,
+ * append "implements Map61B<K, V>" to the end of your "public class..."
  * declaration, though you can use other formal type parameters if you'd like.
  */
 public interface Map61B<K, V> extends Iterable<K> {
@@ -19,7 +20,11 @@ public interface Map61B<K, V> extends Iterable<K> {
     /** Returns the number of key-value mappings in this map. */
     int size();
 
-    /** Associates the specified value with the specified key in this map. */
+    /**
+     * Associates the specified value with the specified key in this map.
+     * If the map previously contained a mapping for the key,
+     * the old value is replaced.
+     */
     void put(K key, V value);
 
     /** Returns a Set view of the keys contained in this map. */
@@ -28,12 +33,15 @@ public interface Map61B<K, V> extends Iterable<K> {
     /**
      * Removes the mapping for the specified key from this map if present.
      * Not required for Lab 8. If you don't implement this, throw an
-     * UnsupportedOperationException. */
+     * UnsupportedOperationException.
+     */
     V remove(K key);
 
     /**
      * Removes the entry for the specified key only if it is currently mapped to
      * the specified value. Not required for Lab 8. If you don't implement this,
-     * throw an UnsupportedOperationException.*/
+     * throw an UnsupportedOperationException.
+     */
     V remove(K key, V value);
 }
+
