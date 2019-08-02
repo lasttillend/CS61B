@@ -1,23 +1,21 @@
 package bearmaps;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.NoSuchElementException;
-import java.util.TreeMap;
 
 public class ArrayHeapMinPQ<T> implements ExtrinsicMinPQ<T> {
     private PriorityNode[] minHeap;      // store items at indices 1 to n
-    private int n;                       // number of items on priority queue
-    private Map<T, PriorityNode> items;
+    private int n;                       // number of items in priority queue
+    private Map<T, Integer> itemMapIndex;
 
     private class PriorityNode {
         T item;
         double priority;
-        int index;                     // index in the minHeap
 
-        PriorityNode(T item, double priority, int index) {
+        PriorityNode(T item, double priority) {
             this.item = item;
             this.priority = priority;
-            this.index = index;
         }
 
         T getItem() {
@@ -31,20 +29,12 @@ public class ArrayHeapMinPQ<T> implements ExtrinsicMinPQ<T> {
         void setPriority(double priority) {
             this.priority = priority;
         }
-
-        int getIndex() {
-            return index;
-        }
-
-        void setIndex(int index) {
-            this.index = index;
-        }
     }
 
     public ArrayHeapMinPQ(int initCapacity) {
         minHeap = new ArrayHeapMinPQ.PriorityNode[initCapacity + 1];
 //        minHeap = (PriorityNode[]) new Object[initCapacity + 1];  // doesn't work
-        items = new TreeMap<>();
+        itemMapIndex = new HashMap<>();
         n = 0;
     }
 
@@ -57,7 +47,7 @@ public class ArrayHeapMinPQ<T> implements ExtrinsicMinPQ<T> {
      */
     @Override
     public boolean contains(T item) {
-        return items.containsKey(item);
+        return itemMapIndex.containsKey(item);
     }
 
     /**
@@ -73,9 +63,9 @@ public class ArrayHeapMinPQ<T> implements ExtrinsicMinPQ<T> {
         if (n == minHeap.length - 1) {
             resize(2 * minHeap.length);
         }
-        PriorityNode newPNode = new PriorityNode(item, priority, ++n);
-        minHeap[n] = newPNode;
-        items.put(item, newPNode);
+        PriorityNode newPNode = new PriorityNode(item, priority);
+        minHeap[++n] = newPNode;
+        itemMapIndex.put(item, n);
         swim(n);
     }
 
@@ -103,10 +93,10 @@ public class ArrayHeapMinPQ<T> implements ExtrinsicMinPQ<T> {
             throw new NoSuchElementException();
         }
         T minItem = minHeap[1].getItem();
-        exch(1, n--);
-        sink(1);
+        swap(1, n--);
         minHeap[n + 1] = null;
-        items.remove(minItem);
+        itemMapIndex.remove(minItem);
+        sink(1);
         if ((n > 0) && (n == (minHeap.length - 1) / 4 )) {
             resize(minHeap.length / 2);
         }
@@ -130,53 +120,62 @@ public class ArrayHeapMinPQ<T> implements ExtrinsicMinPQ<T> {
         if (!contains(item)) {
             throw new NoSuchElementException();
         }
-        int indInMinHeap = items.get(item).getIndex();
-        PriorityNode resetNode = minHeap[indInMinHeap];
-        resetNode.setPriority(priority);
-        if (hasChild(indInMinHeap) && (greater(indInMinHeap, indInMinHeap * 2) || greater(indInMinHeap, indInMinHeap * 2 + 1))) {
-            sink(indInMinHeap);
-
-        } else if (hasParent(indInMinHeap) && greater(indInMinHeap / 2, indInMinHeap)) {
-            swim(indInMinHeap);
+        int index = itemMapIndex.get(item);
+        double oldPriority = minHeap[index].getPriority();
+        minHeap[index].setPriority(priority);
+        if (oldPriority < priority) {
+            sink(index);
+        } else {
+            swim(index);
         }
     }
 
     /************************************************
      *  Helper functions.
      ************************************************/
-    private void swim(int k) {
-        while (k > 1 && greater(k / 2, k)) {
-            exch(k, k / 2);
-            k = k / 2;
+    private void swim(int i) {
+        if (i > 1 && smaller(i, parent(i))) {
+            swap(i, parent(i));
+            swim(parent(i));
         }
     }
 
-    private void sink(int k) {
-        while (2 * k <= n) {
-            int j = 2 * k;
-            if (j < n && greater(j, j + 1)) {
-                j++;
-            }
-            if (!greater(k, j)) {
-                break;
-            }
-            exch(k, j);
-            k = j;
+    private void sink(int i) {
+        int smallest = i;
+        if (leftChild(i) <= size() && smaller(leftChild(i), smallest)) {
+            smallest = leftChild(i);
+        }
+        if (rightChild(i) <= size() && smaller(rightChild(i), smallest)) {
+            smallest = rightChild(i);
+        }
+        if (smallest != i) {
+            swap(i, smallest);
+            sink(smallest);
         }
     }
 
-    private boolean greater(int i, int j) {
-        return minHeap[i].getPriority() > minHeap[j].getPriority();
+    private int parent(int i) {
+        return i / 2;
     }
 
-    private void exch(int i, int j) {
+    private int leftChild(int i) {
+        return i * 2;
+    }
+
+    private int rightChild(int i) {
+        return i * 2 + 1;
+    }
+
+    private boolean smaller(int i, int j) {
+        return minHeap[i].getPriority() < minHeap[j].getPriority();
+    }
+
+    private void swap(int i, int j) {
         PriorityNode swapNode = minHeap[i];
-        int swapInd = minHeap[i].getIndex();
-        minHeap[i].setIndex(minHeap[j].getIndex());
-        minHeap[j].setIndex(swapInd);
-
         minHeap[i] = minHeap[j];
         minHeap[j] = swapNode;
+        itemMapIndex.put(minHeap[i].getItem(), i);
+        itemMapIndex.put(minHeap[j].getItem(), j);
     }
 
     private void resize(int capacity) {
@@ -185,13 +184,5 @@ public class ArrayHeapMinPQ<T> implements ExtrinsicMinPQ<T> {
             temp[i] = minHeap[i];
         }
         minHeap = temp;
-    }
-
-    private boolean hasParent(int i) {
-        return (i > 1);
-    }
-
-    private boolean hasChild(int i) {
-        return i * 2 <= size();
     }
 }
