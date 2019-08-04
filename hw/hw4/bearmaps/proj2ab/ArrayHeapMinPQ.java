@@ -93,8 +93,9 @@ public class ArrayHeapMinPQ<T> implements ExtrinsicMinPQ<T> {
             throw new NoSuchElementException();
         }
         T minItem = minHeap[1].getItem();
-        swap(1, n--);
-        minHeap[n + 1] = null;
+        swap(1, n);
+        minHeap[n] = null;
+        n -= 1;
         itemMapIndex.remove(minItem);
         sink(1);
         if ((n > 0) && (n == (minHeap.length - 1) / 4 )) {

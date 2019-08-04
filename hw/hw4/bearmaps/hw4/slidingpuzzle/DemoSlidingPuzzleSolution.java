@@ -14,11 +14,13 @@ public class DemoSlidingPuzzleSolution {
 
     public static void main(String[] args) {
         Board start = Board.readBoard("BasicPuzzle1.txt");
+//        Board start = Board.readBoard("myPuzzle.txt");
         System.out.println(start);
         int N = start.size();
         Board goal = Board.solved(N);
 
-        BoardGraph spg = new BoardGraph();
+        BoardGraph spg =  new BoardGraph();
+
 
 //        ShortestPathsSolver<Board> solver = new LazySolver<>(spg, start, goal, 20);
         ShortestPathsSolver<Board> solver = new AStarSolver<>(spg, start, goal, 20);
