@@ -1,6 +1,6 @@
 # CS 61B(Spring 2019): Data Structures
 
-This repository tracks my self-studying experience of CS61B(Data Structures) of UC Berkeley.
+This repository tracks my self-studying experience of [CS61B](https://sp19.datastructur.es/)(Data Structures) of UC Berkeley.
 
 - /hw folder contains all four homework
 - /lab folder contains all labs
